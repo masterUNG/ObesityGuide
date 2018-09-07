@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FCE4EC"
+    tools:context="com.example.a1010.obesityguide.bmi_Valuation">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtBmi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/athiti_extralight"
+                    android:text="คำนวณดัชนีมวลกาย"
+                    android:textAlignment="center"
+                    android:textColor="#FF5252"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#FCE4EC"
+                            android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:orientation="horizontal"
+                                    android:paddingRight="10dp">
+
+                                        <TextView
+                                            android:id="@+id/weight"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="น้ำหนัก"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#EE8877"
+                                            android:textSize="22sp" />
+
+                                        <EditText
+                                            android:id="@+id/inweight"
+                                            android:layout_width="190dp"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="กิโลกรัม"
+                                            android:inputType="number"
+                                            android:textAlignment="viewEnd"
+                                            android:textColor="@color/colorPrimaryDark"
+                                            android:textSize="22sp" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:paddingRight="10dp">
+
+                                        <TextView
+                                            android:id="@+id/height"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_weight="1"
+                                            android:text="ส่วนสูง"
+                                            android:textAlignment="viewStart"
+                                            android:textColor="#EE8877"
+                                            android:textSize="22sp" />
+
+                                        <EditText
+                                            android:id="@+id/inheight"
+                                            android:layout_width="190dp"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:hint="เมตร"
+                                            android:inputType="number"
+                                            android:text=""
+                                            android:textAlignment="viewEnd"
+                                            android:textColor="@color/colorPrimaryDark"
+                                            android:textSize="22sp" />
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_weight="1"
+                                    android:orientation="horizontal"
+                                    android:paddingRight="10dp">
+
+                                        <TextView
+                                            android:id="@+id/txtresult"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:padding="10dp"
+                                            android:paddingTop="20dp"
+                                            android:text="BMI="
+                                            android:textColor="#EE8877"
+                                            android:textSize="25dp" />
+
+                                        <EditText
+                                            android:id="@+id/edtResult"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:ems="10"
+                                            android:inputType="textPersonName" />
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="**ระดับการแปรผลดัชนีมวลกาย(มาตรฐานสากล)**"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/txtDuration"
+                                    android:textAlignment="center" />
+
+                                <TextView
+                                    android:id="@+id/result"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:textAlignment="center"
+                                    android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                        <Button
+                                            android:id="@+id/btnCal"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:layout_marginLeft="30dp"
+                                            android:layout_marginRight="10dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/btncal"
+                                            android:onClick="calculateBMI"
+                                            android:paddingLeft="30dp" />
+
+                                        <Button
+                                            android:id="@+id/btnReset"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="70dp"
+                                            android:layout_marginLeft="0dp"
+                                            android:layout_weight="1"
+                                            android:background="@drawable/btnreset" />
+                        </LinearLayout>
+                        </RelativeLayout>
+                </LinearLayout>
+        </ScrollView>
+
+</RelativeLayout>

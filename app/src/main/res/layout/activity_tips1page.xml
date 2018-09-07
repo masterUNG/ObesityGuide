@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1010.obesityguide.tips1page">
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/back"
+        android:onClick="BackHome" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/txttips1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fontFamily="@font/athiti_extralight"
+        android:text="หลักโภชนาการ 9 ข้อ"
+        android:textAlignment="center"
+        android:textColor="#FF5252"
+        android:textSize="25sp"
+        android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnpic1"
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/posanabanyad"
+                android:padding="175dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txt1Detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/athiti_extralight"
+                android:text=" ◆การกินอาหารตามหลักโภชนาการ 9 ข้อ
+ 1. กินอาหารครบ 5 หมู่ แต่ละหมู่ให้หลากหลาย และหมั่นดูแลน้ำหนักตัว คือ ควรบริโภคอาหารชนิดต่างๆ ให้ได้วันละ 15-25 ชนิด และให้มีการหมุนเวียนกันไปในแต่ละวัน\n
+ 2. กินข้าวเป็นอาหารหลัก สลับกับอาหารประเภทแป้งเป็นบางมื้อ ซึ่งถ้าเป็นไปได้ ควรบริโภคข้าวกล้อง หรือ ข้าวซ้อมมือ ควบคู่ไปกับอาหารประเภทแป้ง โดยหมวดข้าวแป้งนี้ ควรบริโภควันละ 8-12 ทัพพี\n
+ 3. กินพืช ผักให้มาก และกินผลไม้เป็นประจำ พยายามเลือกซื้อและบริโภคพืช ผัก และผลไม้ ตามฤดูกาล โดยพืชผักควรกินประมาณ วันละ 4-6 ทัพพี ส่วนผลไม้กินประมาณ 3-5 ส่วนต่อวัน (ผลไม้ 1 ส่วน เช่น กล้วยน้ำว้า 1 ผล, เงาะ 4 ผล, ส้ม 2 ผลกลาง, มะละกอ 10 คำ, ฝรั่ง 1 ผลเล็ก)\n
+ 4. กินปลา เนื้อสัตว์ไม่ติดมัน ไข่ และถั่วเมล็ดแห้งเป็นประจำ ซึ่งให้โปรตีน โดยให้ บริโภควันละ 6-12 ช้อนกินข้าว สำหรับไข่ก็สามารถบริโภคได้สัปดาห์ละ 2-3 ฟอง\n
+ 5. ดื่มนมให้เหมาะสมตามวัย ซึ่งวัยทำงานนี้ สามารถดื่มนมได้วันละ 1-2 แก้ว\n
+ 6. กินอาหารที่มีไขมันแต่พอควร เพราะถ้าได้รับไขมันมากเกินไป จะทำให้เกิดปัญหาไขมันในเลือดสูง และเป็นปัญหาโรคอ้วน และถ้ากินพืชผัก และผลไม้น้อย ขาดการออกกำลังกาย จะทำให้ไขมันไปเกาะที่ผนังหลอดเลือดแดงได้ง่ายขึ้น จนเกิดการแข็งตัวนำไปสู่โรคความดันโลหิตสูงและโรคหัวใจขาดเลือด\n
+ 7. หลีกเลี่ยงการกินอาหารรสจัดและเค็มจัด เพราะจะทำให้เกิดโรคอ้วนและความดันโลหิตสูงได้\n
+ 8. กินอาหารที่สะอาดปราศจากการปนเปื้อน เพราะสิ่งปนเปื้อนต่างๆ สามารถทำให้เกิดโรคอุจจาระร่วง หรืออาหารเป็นพิษ รวมทั้งอาจจะทำให้เกิดโรคพยาธิ และมะเร็งบางประเภทได้\n
+ 9. งดหรือลดเครื่องดื่มแอลกอฮอล์ เพราะเป็นสารเสพติด และถ้าดื่มจนติดแล้ว จะทำให้ร่างกายขาดวิตามิน และแร่ธาตุต่างๆ รวมทั้งอาจจะเป็นโรคตับแข็งควบคู่ไปด้วย"
+                android:textColor="#D81B60 "
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

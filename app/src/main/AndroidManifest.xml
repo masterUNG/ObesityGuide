@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a1010.obesityguide">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".bmi_Valuation" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".eatmanu" />
+        <activity android:name=".burnmanu" />
+        <activity android:name=".brainmanu" />
+        <activity android:name=".tips1page" />
+        <activity android:name=".tips2page" />
+        <activity android:name=".tips3page" />
+        <activity android:name=".tips4page" />
+        <activity android:name=".tips5page" />
+        <activity android:name=".expressmanu" />
+        <activity android:name=".calorie"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1010.obesityguide.tips2page">
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/back"
+        android:onClick="BackHome" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txttips2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/athiti_extralight"
+            android:paddingLeft="50dp"
+            android:text="การปรุงอาหารที่ให้ไขมันต่ำ"
+            android:textAlignment="center"
+            android:textColor="#FF5252"
+            android:textSize="25sp"
+            android:textStyle="normal|bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnpic2"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/sauce"
+                android:padding="175dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/txt2Detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/athiti_extralight"
+                android:text="1.ตัดไขมันที่เห็นบนเนื้อสัตว์ทิ้ง ดึงหนังไก่หรือหนังเป็ดทิ้ง\n
+2.ใช้วิธีลวก นึ่ง อบ หลีกเลี่ยงวิธีทอดและผัด\n
+3.ใช้น้ำมันสเปรย์ลงบนกระทะหรือใช้กระทะแบบที่ไม่ต้องใช้น้ำมันมาก\n
+4.ไม่เติมน้ำตาลหรือเครื่องปรุงหลายๆชนิดที่จะเพิ่มพลังงาน\n
+5.เก็บน้ำต้มกระดูกไว้ในตู้เย็นสักระยะหนึ่ง แล้วช้อนเอาไขมันที่อยู่ตอนบนออกก่อนนำมาปรุงอาหาร\n
+6.ประกอบอาหารที่มีพลังงานต่ำแทนอาหารพลังงานสูง เช่น แกงส้มแทนแกงเขียวหวาน\n
+7.ใช้เครื่องเทศเพิ่มกลิ่น
+"
+                android:textColor="#D81B60 "
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

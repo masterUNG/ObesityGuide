@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1010.obesityguide.tips4page">
+
+    <Button
+        android:id="@+id/btnHome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:background="@drawable/back"
+        android:onClick="BackHome" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txttips4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/athiti_extralight"
+            android:paddingLeft="25dp"
+            android:text="การปรับเปลี่ยนพฤติกรรม"
+            android:textAlignment="center"
+            android:textColor="#FF5252"
+            android:textSize="25sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/txt3Detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/athiti_extralight"
+                android:text="1. เฝ้าติดตามและเก็บบันทึกข้อมูลการกินและการออกกำลังกายเพื่อให้เห็นรายละเอียดว่า
+    ◆อ่านมากเพียงใด เกินความต้องการของร่างกายหรือไม่
+    ◆กินอะไรบ้าง มีผลดีต่อสุขภาพหรือไม่
+    ◆กำลังทำอะไรขณะกิน  ก่อน และหลังกินอาหาร
+    ◆ใช้พลังงานเพื่อเผาผลาญไขมันในร่างกายได้มากน้อยเพียงใด
+    ◆อารมณ์ขณะกินเป็นอย่างไร มีผลทำให้กินอาหารมากขึ้นหรือไม่
+
+2. ควบคุมสิ่งกระตุ้นโดยตัดลูกโซ่พฤติกรรมที่นำไปสู่การกินโดย
+    ◆การสังเกตแบบแผนการกิน สัญญาณที่นำไปสู่การกิน แยกความแตกต่างระหว่างความหิวและความอยากอาหาร
+    ◆พยายามมีขอว่าอยากกินอาหารมากที่สุดในช่วงใด ให้หลีกเลี่ยงในช่วงเวลานั้นโดยทำกิจกรรมอื่นแทนเช่นการเดินเล่นหรืออาบน้ำ
+    ◆วางแผนการกิน
+    ◆เปลี่ยนสิ่งแวดล้อมรอบตัว
+    ◆การยับยั้ง
+
+3. ตั้งสติก่อนกิน ใช้เวลาเคี้ยวอาหารให้นานขึ้นเพราะหลังจากเริ่มกินอาหารไป 10-15 นาทีสมองจะปิดปุ่มประสาทความหิว ความรู้สึกอยากกินจะลดลง
+
+4. ปฏิเสธอาหารที่ผู้อื่นยื่นให้
+
+5. ออกกำลังกาย
+
+6. ปรับทัศนคติคิดในด้านบวกที่จะเป็นแรงจูงใจให้ทำตามเป้าหมายได้สำเร็จ
+
+7. หาแรงสนับสนุนจากคนรอบข้าง
+
+8. จัดการกับความเครียดด้วยวิธีอื่นๆทดแทนการกิน ไม่ใช้การกินเป็นการให้รางวัลหรือการลงโทษ
+
+9. ป้องกันไม่ให้น้ำหนักตัวเพิ่มกลับคืนมาโดยหลีกเลี่ยงและป้องกันการพลั้งเผลอ"
+                android:textColor="#D81B60 "
+                android:textSize="22sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

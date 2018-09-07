@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ObesityGuide</string>
+    <string name="weight">weight</string>
+    <string name="height">height</string>
+    <string name="calculateBMI">calculate BMI</string>
+
+    <string name="very_severely_underweight">Very severely underweight</string>
+    <string name="normal">ปกติ</string>
+    <string name="obese_class_i">อ้วนระดับ 1(Moderately Obese)</string>
+    <string name="obese_class_ii">อ้วนระดับ 2(Moderately Obese)</string>
+    <string name="obese_class_iii">อ้วนระดับ 3(Severely Obese)</string>
+    <string name="obese_class_iiii">อ้วนระดับ 4(Very severely Obese)</string>
+
+</resources>

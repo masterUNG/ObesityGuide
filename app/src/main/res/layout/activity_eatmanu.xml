@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCE4EC"
+    tools:context="com.example.a1010.obesityguide.eatmanu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtAdvice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/athiti_extralight"
+            android:text="เมนูอาหารและแคลอรี่"
+            android:textAlignment="center"
+            android:textColor="#FF5252"
+            android:textSize="25sp"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btntips2"
+                android:layout_width="360dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/btn2"
+                android:elevation="0dp"
+                android:fontFamily="@font/athiti_extralight"
+                android:text="คำนวณแคลอรี่"
+                android:textAlignment="center"
+                android:textColor="#03A9F4 "
+                android:textSize="26sp" />
+
+
+            <Button
+                android:id="@+id/btntips4"
+                android:layout_width="360dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/btn4"
+                android:elevation="0dp"
+                android:fontFamily="@font/athiti_extralight"
+                android:text="ตารางอาหารจานเดียว"
+                android:textAlignment="center"
+                android:textColor="#558B2F "
+                android:textSize="26sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
