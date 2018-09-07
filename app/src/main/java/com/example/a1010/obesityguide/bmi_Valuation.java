@@ -1,19 +1,27 @@
 package com.example.a1010.obesityguide;
 
+        import android.content.Intent;
         import android.support.v7.app.AppCompatActivity;
         import android.os.Bundle;
+        import android.text.method.MovementMethod;
         import android.view.View;
+        import android.widget.Button;
         import android.widget.EditText;
         import android.widget.TextView;
 
         import org.w3c.dom.Text;
+
+        import java.text.DateFormat;
+        import java.text.SimpleDateFormat;
+        import java.util.Calendar;
 
 public class bmi_Valuation extends AppCompatActivity {
 
 
     private EditText inheight;
     private EditText inweight;
-    private EditText edtResult;
+    private TextView edtResult;
+    private String dateString, weightString, heightString, myBMIstring;
 
 
     @Override
@@ -22,12 +30,46 @@ public class bmi_Valuation extends AppCompatActivity {
         setContentView(R.layout.activity_bmi__valuation);
         inheight = (EditText) findViewById(R.id.inheight);
         inweight = (EditText) findViewById(R.id.inweight);
-        edtResult = (EditText) findViewById(R.id.edtResult);
+        edtResult = findViewById(R.id.edtResult);
+
+//        Show Date
+        showDate();
+
+//        Show ListView
+        showListView();
+
+
+    } //main method
+
+    private void showListView() {
+        Button button =  findViewById(R.id.btnReset);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //            Move to ListBmi
+
+                startActivity(new Intent(bmi_Valuation.this,ListBMIActivity.class));
+
+            }
+        });
+    }
+
+    private void showDate() {
+        TextView textView= findViewById(R.id.txtDate);
+
+        Calendar calendar = Calendar.getInstance();
+        DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm");
+        dateString = dateFormat.format(calendar.getTime());
+        textView.setText(dateString);
+
     }
 
     public void calculateBMI(View view){
         String heightStr = inheight.getText().toString();
         String weightStr = inweight.getText().toString();
+
+        weightString = weightStr;
+        heightString = heightStr;
 
         if (heightStr != null && !"".equals(heightStr)
                 && weightStr != null && !"".equals(weightStr)){
@@ -37,6 +79,18 @@ public class bmi_Valuation extends AppCompatActivity {
             float bmi = weightValue / (heightValue * heightValue);
 
             displayBMI(bmi);
+
+            myBMIstring = Float.toString(bmi);
+
+
+ //           Update SQLite คือ ฐานข้อมูลขนาดเล็กในมือถือ
+            MyManage myManage = new MyManage(bmi_Valuation.this);
+            myManage.addBmiToSQLite(dateString, weightString, heightString, myBMIstring);
+
+//            Clear TextField
+            inheight.setText("");
+            inweight.setText("");
+
         }
     }
     private void displayBMI(float bmi) {

@@ -31,7 +31,9 @@
         <activity android:name=".tips4page" />
         <activity android:name=".tips5page" />
         <activity android:name=".expressmanu" />
-        <activity android:name=".calorie"></activity>
+        <activity android:name=".calorie" />
+        <activity android:name=".ListBMIActivity" />
+        <activity android:name=".GraphActivity"></activity>
     </application>
 
 </manifest>
