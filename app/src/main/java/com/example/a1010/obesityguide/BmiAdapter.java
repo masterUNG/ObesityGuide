@@ -24,7 +24,7 @@ public class BmiAdapter extends BaseAdapter {
         this.heightStringArrayList = heightStringArrayList;
         this.bmiStringArrayList = bmiStringArrayList;
     }
-
+//หน้าข้อมูลที่บันทึกBMI
     @Override
     public int getCount() {
         return dateStringArrayList.size();

@@ -25,6 +25,8 @@ public class GraphActivity extends AppCompatActivity {
         createGraph();
     }
 
+
+
     private void createGraph() {
 
         SQLiteDatabase sqLiteDatabase = openOrCreateDatabase(myOpenHelper.database_name, MODE_PRIVATE, null);
@@ -40,7 +42,7 @@ public class GraphActivity extends AppCompatActivity {
             weightStringArrayList.add(cursor.getString(2));
             Log.d("7SepV1", "weight[" + i + "] ==> " + weightStringArrayList.get(i));
             cursor.moveToNext();
-        }
+        }//ประมวลผลเintเกิน32ใช้long
 
         DataPoint[] weightDataPoints = new DataPoint[amountData];
         for (int i=0; i<amountData; i+=1) {

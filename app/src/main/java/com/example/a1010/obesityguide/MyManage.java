@@ -16,7 +16,6 @@ public class MyManage {
         sqLiteDatabase = myOpenHelper.getWritableDatabase();
     }
 
-    //ประมวลผลเintเกิน32ใช้long
     public long addBmiToSQLite(String dateString,
                                String weightString,
                                String heightString,
